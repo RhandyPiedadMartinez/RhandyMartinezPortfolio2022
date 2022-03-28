@@ -20,33 +20,18 @@
 body, html {
 	height: 100%;
 	background: #3AAFA9;
-	color: #17252A;
 	font-family: monospace;
 	padding-top: 50px;
 	color: #FEFFFF;
+	
+  	background-color: #3AAFA9; /* For browsers that do not support gradients */
+ 	 background-image: linear-gradient(270deg, #172529, #3AAFA9);
 }
 
 @media ( max-width : 575px) {
 	body {
 		padding-top: 120px;
 	}
-}
-
-.bg {
-	/* The image used */
-	background-image:
-		url("https://images.pexels.com/photos/11341064/pexels-photo-11341064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-	/* Full height */
-	height: 50%;
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bodybg {
-	background: #3AAFA9;
-	color: #eee;
 }
 
 .custom_navbar {
@@ -79,6 +64,7 @@ a:hover {
 .container {
 	padding-bottom: 20px;
 }
+
 </style>
 </head>
 <body>
