@@ -13,13 +13,17 @@
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 
 <style>
 body, html {
 	height: 100%;
-	padding-top: 30px;
 	background: #3AAFA9;
 	color: #17252A;
+	font-family: monospace;
+	padding-top: 50px;
+	color: #FEFFFF;
 }
 
 @media ( max-width : 575px) {
@@ -51,6 +55,7 @@ body, html {
 }
 
 a {
+	font-family: sans-serif;
 	color: #FEFFFF;
 	text-decoration: none
 }
@@ -60,20 +65,31 @@ a:hover {
 }
 
 /* selected link */
-a:active {
-	color: #DEF2F1;
+.name {
+	font-size: 50px;
+	padding-top: 100px;
+	color: #FEFFFF;
+	font-weight: bold;
+}
+
+.name-detail {
+	color: #17252A;
+}
+
+.container {
+	padding-bottom: 20px;
 }
 </style>
 </head>
 <body>
 
 
-	<nav class="navbar navbar-expand-sm fixed-top custom_navbar">
+	<nav
+		class="navbar navbar-expand-sm fixed-top custom_navbar justify-content-center">
 		<ul class="navbar-nav">
-			<li class="nav-item active"><a class="nav-link" href="#">HOME</a>
-			</li>
+			<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">WORKS</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
 			</li>
 		</ul>
 	</nav>
@@ -87,45 +103,41 @@ a:active {
 		xs - for xtra small screens
 
 	-->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-24 text-center">
-				<img src="profilepicture.jpg" width="300" height="300"
-					class="rounded-circle" alt="Profile Picture">
-				<h3>Rhandy Martinez</h3>
-				<h5>Java Backend Developer</h5>
-			</div>
-		</div>
-	</div>
-
 
 
 
 	<div class="container text-center">
-		<h1>Gallery</h1>
 		<div class="row text-center">
-			<div class="col-md-4 col-sm-12">
-				<img
-					src="https://images.pexels.com/photos/11341064/pexels-photo-11341064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-					class="img-thumbnail" alt="Cinque Terre">
-				<p>This is my first image</p>
+			<div class="col-md-7 col-sm-12">
+				<div class="name">Hello, I'm Rhandy</div>
+				<div class="name-detail">
+					<h1>
+						<b>Backend Developer</b>
+					</h1>
+					<h5>Every client deserves highly efficient and quality
+						algorithms.</h5>
+					<h5>And, I am one capable offering this.</h5>
+					<br>
+					<button type="button" class="btn btn-lg btn-dark">Download
+						CV</button>
+					<br> <br>
+					<br> <br><br> <br><br> <br>
+					<button type="button" class="btn btn-lg btn-outline-dark fab fa-facebook"></button>
+					<button type="button" class="btn btn-lg btn-outline-dark fab fa-twitter"></button>
+					<button type="button" class="btn btn-lg btn-outline-dark fab fa-instagram"></button>
+					<button type="button" class="btn btn-lg btn-outline-dark fab fa-github"></button>
+					<button type="button" class="btn btn-lg btn-outline-dark fas fa-phone"></button>
+				</div>
 			</div>
-			<div class="col-md-4 col-sm-12">
-				<img
-					src="https://images.pexels.com/photos/11341064/pexels-photo-11341064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-					class="img-thumbnail" alt="Cinque Terre">
-				<p>This is my second image</p>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<img
-					src="https://images.pexels.com/photos/11341064/pexels-photo-11341064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-					class="img-thumbnail" alt="Cinque Terre">
-				<p>This is my third image</p>
+			<div class="col-md-5 col-sm-12">
+				<img src="profilepicture.jpg" width="470" height="470"
+					class="rounded-circle" alt="Profile Picture">
 			</div>
 		</div>
 	</div>
-
-
+	<br>
+	<br>
+	<br>
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-8 col-sm-12 text-center">
@@ -148,14 +160,7 @@ a:active {
 					third image This is my third image This is my third image This is
 					my third image This is my third image This is my third image This
 					is my third image</p>
-				<button type="button" class="btn">Basic</button>
-				<button type="button" class="btn btn-default">Default</button>
-				<button type="button" class="btn btn-primary">Primary</button>
-				<button type="button" class="btn btn-success">Success</button>
-				<button type="button" class="btn btn-info">Info</button>
-				<button type="button" class="btn btn-warning">Warning</button>
-				<button type="button" class="btn btn-danger">Danger</button>
-				<button type="button" class="btn btn-link">Link</button>
+
 			</div>
 			<div class="col-md-8 col-sm-12 text-center">
 				<img
