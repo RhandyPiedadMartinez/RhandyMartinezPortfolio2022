@@ -13,7 +13,10 @@
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	crossorigin="anonymous">
 
 
 <style>
@@ -23,9 +26,9 @@ body, html {
 	font-family: monospace;
 	padding-top: 50px;
 	color: #FEFFFF;
-	
-  	background-color: #3AAFA9; /* For browsers that do not support gradients */
- 	 background-image: linear-gradient(270deg, #172529, #3AAFA9);
+	background-color: #3AAFA9;
+	/* For browsers that do not support gradients */
+	background-image: linear-gradient(270deg, #172529, 42%, #3AAFA9);
 }
 
 @media ( max-width : 575px) {
@@ -36,17 +39,24 @@ body, html {
 
 .custom_navbar {
 	background: #172529;
-	color: #FEFFFF;
+	/*
+	background: #172529;
+	background: #2B7A78;
+	background: #3AAFA9;
+	background: #DEF2F1;
+	background: #FEFFFF;
+	*/
 }
 
 a {
 	font-family: sans-serif;
-	color: #FEFFFF;
-	text-decoration: none
+	color: #3AAFA9;
+	text-decoration: none;
+	font-weight: bold;
 }
 /* mouse over link */
 a:hover {
-	color: #3AAFA9;
+	color: #FEFFFF;
 }
 
 /* selected link */
@@ -63,6 +73,10 @@ a:hover {
 
 .container {
 	padding-bottom: 20px;
+}
+
+img {
+	object-fit: contain;
 }
 
 </style>
@@ -100,62 +114,107 @@ a:hover {
 					<h1>
 						<b>Backend Developer</b>
 					</h1>
-					<h5>Every client deserves highly efficient and quality
-						algorithms.</h5>
-					<h5>And, I am one capable offering this.</h5>
+					<h4>
+						Every client deserves highly efficient algorithms.<br> And, I
+						am one capable offering this.
+					</h4>
 					<br>
 					<button type="button" class="btn btn-lg btn-dark">Download
 						CV</button>
-					<br> <br>
-					<br> <br><br> <br><br> <br>
-					<button type="button" class="btn btn-lg btn-outline-dark fab fa-facebook"></button>
-					<button type="button" class="btn btn-lg btn-outline-dark fab fa-twitter"></button>
-					<button type="button" class="btn btn-lg btn-outline-dark fab fa-instagram"></button>
-					<button type="button" class="btn btn-lg btn-outline-dark fab fa-github"></button>
-					<button type="button" class="btn btn-lg btn-outline-dark fas fa-phone"></button>
+					<br> <br> <br> <br> <br> <br> <br>
+					<br>
+					<button type="button"
+						class="btn btn-lg btn-outline-light fab fa-facebook"></button>
+					<button type="button"
+						class="btn btn-lg btn-outline-light fab fa-twitter"></button>
+					<button type="button"
+						class="btn btn-lg btn-outline-light fab fa-instagram"></button>
+					<button type="button"
+						class="btn btn-lg btn-outline-light fab fa-github"></button>
+					<button type="button"
+						class="btn btn-lg btn-outline-light fas fa-phone"></button>
+					<br> <br> <br>
 				</div>
 			</div>
 			<div class="col-md-5 col-sm-12">
-				<img src="profilepicture.jpg" width="470" height="470"
-					class="rounded-circle" alt="Profile Picture">
+				<img src="assets/images/imgprofilepicture.jpg" width="470"
+					height="470" class="rounded-circle" alt="Profile Picture">
 			</div>
 		</div>
 	</div>
 	<br>
 	<br>
 	<br>
+	<br>
+
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-8 col-sm-12 text-center">
-				<img
-					src="https://visme.co/blog/wp-content/uploads/2016/09/website24.jpg"
-					class="img-thumbnail" alt="Cinque Terre">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+						<li data-target="#demo" data-slide-to="5"></li>
+						<li data-target="#demo" data-slide-to="6"></li>
+					</ul>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner rounded" style="width: 700px; height: 500px" >
+						<div class="carousel-item active">
+							<img src="assets/images/imgASMOutput.png" style="width: 800px">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/imgASMcode.png">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/imgCSS.png">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/imgJS.png">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/imgOOP.png">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/imgOOP2.png">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/imgmobile.png">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+
+				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
-				<p>This is my third lorem This is my third image This is my
-					third image This is my third image This is my third image This is
-					my third image This is my third image This is my third image This
-					is my third image</p>
-			</div>
-		</div>
-
-
-		<div class="row ">
-			<div class="col-md-4 col-sm-12">
-				<p>This is my third lorem This is my third image This is my
-					third image This is my third image This is my third image This is
-					my third image This is my third image This is my third image This
-					is my third image</p>
-
-			</div>
-			<div class="col-md-8 col-sm-12 text-center">
-				<img
-					src="https://images.pexels.com/photos/11341064/pexels-photo-11341064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-					class="img-thumbnail" alt="Cinque Terre">
+			<h1>About me:</h1>
+				<br>
+				<h4 class="text-justify">
+					I am currently a second year computer science student from
+					Technological Institute of the Philippines in Manila. <br> <br></>I
+					am proficient as back-end developer in Java for Desktop and Mobile
+					Software Development. <br> <br>I have basic experience in
+					C/C++, Assembly Language, HTML, CSS, JavaScript, Prolog, Python,
+					Visual Basic, Godot, and GameMaker.
+				</h4>
 			</div>
 		</div>
 	</div>
 
+	<div class="container text-center">
+	
+	</div>
 </body>
 </html>
 
