@@ -1,0 +1,108 @@
+
+/*
+		color pallette
+		background: #172529;
+		background: #2B7A78;
+		background: #3AAFA9;
+		background: #DEF2F1;
+		background: #FEFFFF;
+		*/
+body, html {
+	scroll-behavior: smooth;
+	height: 100%;
+	background: #3AAFA9;
+	font-family: monospace;
+	padding-top: 50px;
+	color: #FEFFFF;
+	/* For browsers that do not support gradients */
+	background-image: linear-gradient(270deg, #172529, 42%, #3AAFA9);
+	padding-top: 75px;
+}
+
+.name {
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	color: #FEFFFF;
+	font-weight: bold;
+}
+
+.name-detail {
+	color: #17252A;
+}
+
+.container {
+	padding-bottom: 20px;
+}
+
+
+#aboutme {
+	background: #172529;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#aboutmecontent {
+	border-color: #3AAFA9;
+	border-style: solid;
+	font-family: inherit;
+	padding: 25px;
+	border-radius: 25px;
+	color: #DEF2F1;
+}
+
+#experience {
+	background: #2B7A78;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#experiencecontent {
+	border-color: #FEFFFF;
+	border-style: solid;
+	font-family: inherit;
+	padding: 25px;
+	border-radius: 25px;
+	color: #FEFFFF;
+}
+
+#contacts {
+	background: #172529;
+	color: #FEFFFF;
+	font-family: sans-serif;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+@media ( max-width : 575px) {
+	body {
+		padding-top: 120px;
+		background-image: linear-gradient(270deg, #172529, 12%, #3AAFA9);
+	}
+}
+
+.custom_navbar {
+	background: #172529;
+}
+
+a {
+	font-family: sans-serif;
+	color: #3AAFA9;
+	text-decoration: none;
+	font-weight: bold;
+}
+/* mouse over link */
+a:hover {
+	color: #FEFFFF;
+}
+
+/* selected link */
+
+.progress {
+	margin: 5px;
+}
+
+#progress-label {
+	font-size: 15px;
+}
