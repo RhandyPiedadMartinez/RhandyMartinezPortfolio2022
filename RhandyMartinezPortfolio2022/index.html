@@ -29,11 +29,13 @@ body, html {
 	background-color: #3AAFA9;
 	/* For browsers that do not support gradients */
 	background-image: linear-gradient(270deg, #172529, 42%, #3AAFA9);
+	padding-top: 75px;
 }
 
 @media ( max-width : 575px) {
 	body {
 		padding-top: 120px;
+		background-image: linear-gradient(270deg, #172529, 12%, #3AAFA9);
 	}
 }
 
@@ -61,8 +63,10 @@ a:hover {
 
 /* selected link */
 .name {
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
 	font-size: 50px;
-	padding-top: 100px;
 	color: #FEFFFF;
 	font-weight: bold;
 }
@@ -76,7 +80,8 @@ a:hover {
 }
 
 img {
-	object-fit: contain;
+	display: flex;
+	justify-content: center;
 }
 </style>
 </head>
@@ -105,7 +110,7 @@ img {
 
 
 
-	<div class="container text-center">
+	<div class="container-fluid text-center">
 		<div class="row text-center">
 			<div class="col-md-7 col-sm-12">
 				<div class="name">Hello, I'm Rhandy</div>
@@ -122,23 +127,33 @@ img {
 						CV</button>
 					<br> <br> <br> <br> <br> <br> <br>
 					<br>
-					<button type="button"
-						class="btn btn-lg btn-outline-light fab fa-facebook"></button>
-					<button type="button"
-						class="btn btn-lg btn-outline-light fab fa-twitter"></button>
-					<button type="button"
-						class="btn btn-lg btn-outline-light fab fa-instagram"></button>
-					<button type="button"
-						class="btn btn-lg btn-outline-light fab fa-github"></button>
-					<button type="button"
-						class="btn btn-lg btn-outline-light fas fa-phone"></button>
+					<a href="https://www.facebook.com/rhandy.martinez.56"  target="_blank">
+						<button type="button"
+							class="btn btn-lg btn-outline-light fab fa-facebook"></button>
+					</a> 
+					
+					<a href="https://twitter.com/randmartz" target="_blank">
+						<button type="button"
+							class="btn btn-lg btn-outline-light fab fa-twitter"></button>
+					</a> 
+					
+					<a href="https://github.com/rhandypiedadmartinez" target="_blank">
+						<button type="button"
+							class="btn btn-lg btn-outline-light fab fa-github"></button>
+					</a> 
+					
+					<a href="https://www.youtube.com/channel/UCTkiu7Jylad_XrW8EadVG0A" target="_blank">
+						<button type="button"
+							class="btn btn-lg btn-outline-light fab fa-youtube"></button>
+					</a> 
+					
 					<br> <br> <br>
 				</div>
 			</div>
-			<div class="col-md-5 col-sm-12">
-				<img src="assets/images/profile.png" width="470" height="470"
-					class="rounded-circle" alt="Profile Picture">
-			</div>
+			<span class="col-md-5 col-sm-12"> <img
+				class="img-fluid rounded-circle" src="assets/images/profile.png"
+				width="470" height="470" alt="Profile Picture">
+			</span>
 		</div>
 	</div>
 	<br>
