@@ -24,7 +24,6 @@
 
 /*
 		color pallette
-		
 		background: #172529;
 		background: #2B7A78;
 		background: #3AAFA9;
@@ -32,6 +31,7 @@
 		background: #FEFFFF;
 		*/
 body, html {
+	scroll-behavior: smooth;
 	height: 100%;
 	background: #3AAFA9;
 	font-family: monospace;
@@ -76,6 +76,8 @@ body, html {
 	background: #172529;
 	color: #FEFFFF;
 	font-family: sans-serif;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 @media ( max-width : 575px) {
@@ -139,8 +141,9 @@ img {
 		class="navbar navbar-expand-sm fixed-top custom_navbar justify-content-center">
 		<ul class="navbar-nav">
 			<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+			<li class="nav-item"><a class="nav-link" href="#aboutme">ABOUT</a></li>
+			<li class="nav-item"><a class="nav-link" href="#experience">WORKS</a></li>
+			<li class="nav-item"><a class="nav-link" href="#contacts">CONTACT</a></li>
 		</ul>
 	</nav>
 
@@ -252,7 +255,7 @@ img {
 					<div class="col-md-8">
 						<!-- Red -->
 						<div class="progress">
-							<div class="progress-bar bg-danger" style="width: 25%"></div>
+							<div class="progress-bar bg-danger" style="width: 17%"></div>
 						</div>
 					</div>
 				</div>
@@ -349,38 +352,30 @@ img {
 						<h6>Shopping List Budgeter and Scanner Mobile App</h6>
 						<br>
 					</div>
-
 				</div>
-
-
 			</div>
 
 
 		</div>
 		<div class="row justify-content-center" id="contacts">
+			<div class="col-md-2 col-sm-12 text-left">
+				<h4>
+					<i class="fas fa-map-marked-alt"></i> Address
+				</h4>
 
-			<div class="col-md-12 col-sm-12 text-center">
-				<div class="text-left">
-					<h3>Team Project in Da Structure Course</h3>
-					<h5>Technological Institute of the Philippines, Manila</h5>
-					<h5>Backend Developer</h5>
-					<h6>Rice Distributor Inventory System</h6>
-					<br>
-				</div>
-				<div class="text-left">
-					<h3>Team Project in OOP Course</h3>
-					<h5>Technological Institute of the Philippines, Manila</h5>
-					<h5>Backend Developer</h5>
-					<h6>School Registrar Software</h6>
-					<br>
-				</div>
-				<div class="text-left">
-					<h3>Team Project in Mobile Computing</h3>
-					<h5>Technological Institute of the Philippines, Manila</h5>
-					<h5>Backend Developer</h5>
-					<h6>Shopping List Budgeter and Scanner Mobile App</h6>
-					<br>
-				</div>
+				<h6>2269 Inasal, Maybunga, Pasig City</h6>
+			</div>
+			<div class="col-md-2 col-sm-12 text-left">
+				<h4>
+					<i class="fas fa-envelope"></i> Email
+				</h4>
+				<h6>martinez01@tip.edu.ph</h6>
+			</div>
+			<div class="col-md-2 col-sm-12 text-left">
+				<h4>
+					<i class="fas fa-phone"></i> Contact
+				</h4>
+				<h6>+63 912 3456 789</h6>
 			</div>
 		</div>
 	</div>
