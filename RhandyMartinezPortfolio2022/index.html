@@ -33,7 +33,6 @@
 </head>
 <body>
 
-
 	<nav
 		class="navbar navbar-expand-sm fixed-top custom_navbar justify-content-center">
 		<ul class="navbar-nav">
@@ -221,7 +220,7 @@
 						<div class="col-md-8">
 							<!-- Orange -->
 							<div class="progress">
-								<div class="progress-bar bg-warning" style="width: 30%"></div>
+								<div class="progress-bar bg-warning" style="width: 22%"></div>
 							</div>
 						</div>
 					</div>
@@ -241,7 +240,8 @@
 		</div>
 		<div class="row justify-content-center" id="experience">
 
-			<div class="col-md-8 col-sm-12 text-center reveal" id="experiencecontent">
+			<div class="col-md-8 col-sm-12 text-center reveal"
+				id="experiencecontent">
 				<h1>
 					<b>Experience </b>
 				</h1>
@@ -288,11 +288,15 @@
 
 		<div class="row justify-content-center" id="contacts">
 			<div class="col-md-4 col-sm-12 justify-content-center">
-				<h2>Want me to work with you?</h2>
 
-				<h4>
-					<span class="badge badge-success">Status: Available</span>
-				</h4>
+				<div class="revealsmalldetails">
+					<h2>Want me to work with you?</h2>
+					<h4>
+						<span class="badge badge-success">Status: Available</span>
+					</h4>
+					<br>
+				</div>
+
 			</div>
 
 			<div class="col-md-2 col-sm-12 text-left">
@@ -315,8 +319,15 @@
 					<i class="fas fa-phone"></i> Contact
 				</h4>
 				<h6>+63 912 3456 789</h6>
-				<br> <br>
+				<br> <br>	<br> <br> 	<br> <br>
 			</div>
+
+			<div
+				class="col-md-7 col-sm-12 alert alert-warning alert-dismissible fade show">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Miya from 5km away wants to meet you!</strong>
+			</div>
+		
 		</div>
 	</div>
 
@@ -330,6 +341,26 @@
 	<script>
 		function reveal() {
 			var reveals = document.querySelectorAll(".reveal");
+
+			for (var i = 0; i < reveals.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
+
+				if (elementTop < windowHeight - elementVisible) {
+					reveals[i].classList.add("active");
+				} else {
+					reveals[i].classList.remove("active");
+				}
+			}
+		}
+
+		window.addEventListener("scroll", reveal);
+	</script>
+
+	<script>
+		function reveal() {
+			var reveals = document.querySelectorAll(".revealsmalldetails");
 
 			for (var i = 0; i < reveals.length; i++) {
 				var windowHeight = window.innerHeight;

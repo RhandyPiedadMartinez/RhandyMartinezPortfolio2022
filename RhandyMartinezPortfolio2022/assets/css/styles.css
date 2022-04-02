@@ -75,7 +75,7 @@ body, html {
 	color: #FEFFFF;
 	font-family: sans-serif;
 	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 	
 }
 
@@ -124,12 +124,29 @@ a:hover {
 
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 2s all ease;
 }
+
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
 }
 
+.revealsmalldetails{
+  position: relative;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealsmalldetails.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+alert{
+	padding-top: 50px;
+	
+}
