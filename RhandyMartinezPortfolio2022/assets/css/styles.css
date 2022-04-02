@@ -55,7 +55,6 @@ body, html {
 }
 
 #experience {
-	background: #2B7A78;
 	padding-top: 50px;
 	padding-bottom: 100px;
 	
@@ -72,12 +71,11 @@ body, html {
 
 
 #contacts {
-	
 	background: #172529;
 	color: #FEFFFF;
 	font-family: sans-serif;
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 	
 }
 
@@ -112,3 +110,26 @@ a:hover {
 #progress-label {
 	font-size: 15px;
 }
+
+#exp {
+	color:#172529;
+	font-weight: bolder;
+}
+
+
+#exp #exp.h5{
+	color:#172529;
+	font-weight: bold;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
